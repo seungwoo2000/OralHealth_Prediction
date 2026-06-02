@@ -1,0 +1,83 @@
+{
+  "model_name": "XGBoost",
+  "features": [
+    "gender",
+    "school",
+    "grade",
+    "income",
+    "anxiety",
+    "stress",
+    "despair",
+    "suicidal_thoughts",
+    "smartphone_use_day",
+    "smartphone_use_weekend",
+    "smartphone_dependence",
+    "sleep_quality"
+  ],
+  "target": "oral_poor",
+  "youden_threshold": 0.4996108412742615,
+  "youden_j": 0.2323953625752756,
+  "youden_sensitivity": 0.6091568279919206,
+  "youden_specificity": 0.623238534583355,
+  "target_recall": 0.85,
+  "recall_threshold": 0.397,
+  "encode_map": {
+    "gender": {
+      "Female": 0,
+      "Male": 1
+    },
+    "school": {
+      "Middle school": 0,
+      "High school": 1
+    },
+    "grade": {
+      "Low": 0,
+      "Middle": 1,
+      "High": 2
+    },
+    "income": {
+      "Low": 0,
+      "Middle": 1,
+      "High": 2
+    },
+    "anxiety": {
+      "No": 0,
+      "Mild": 1,
+      "Moderate": 2,
+      "Severe": 3
+    },
+    "stress": {
+      "Low": 0,
+      "Middle": 1,
+      "High": 2
+    },
+    "despair": {
+      "No": 0,
+      "Yes": 1
+    },
+    "suicidal_thoughts": {
+      "No": 0,
+      "Yes": 1
+    },
+    "smartphone_use_day": {
+      "≤3": 0,
+      "3 ~ 5": 1,
+      "5 ~ 8": 2,
+      "≥8": 3
+    },
+    "smartphone_use_weekend": {
+      "≤3": 0,
+      "3 ~ 5": 1,
+      "5 ~ 8": 2,
+      "≥8": 3
+    },
+    "smartphone_dependence": {
+      "No": 0,
+      "Risk": 1
+    },
+    "sleep_quality": {
+      "No": 0,
+      "Yes": 1
+    }
+  }
+}
